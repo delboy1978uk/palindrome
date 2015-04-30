@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1430365837">
+  <project timestamp="1430365837">
+    <package name="Del\Palindrome">
+      <file name="/Users/delboy1978uk/Sites/lab/palindrome/src/Tester.php">
+        <class name="Tester" namespace="Del\Palindrome">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="27" coveredelements="27"/>
+        </class>
+        <line num="24" type="method" name="isPalindrome" crap="2" count="3"/>
+        <line num="27" type="stmt" count="3"/>
+        <line num="28" type="stmt" count="3"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="stmt" count="2"/>
+        <line num="35" type="stmt" count="2"/>
+        <line num="38" type="stmt" count="2"/>
+        <line num="41" type="stmt" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <line num="51" type="method" name="setComparisonStrings" crap="2" count="2"/>
+        <line num="54" type="stmt" count="2"/>
+        <line num="58" type="stmt" count="2"/>
+        <line num="59" type="stmt" count="2"/>
+        <line num="60" type="stmt" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <line num="64" type="stmt" count="2"/>
+        <line num="67" type="stmt" count="2"/>
+        <line num="70" type="stmt" count="2"/>
+        <line num="71" type="stmt" count="2"/>
+        <line num="76" type="method" name="stringsMatch" crap="1" count="2"/>
+        <line num="78" type="stmt" count="2"/>
+        <line num="79" type="stmt" count="2"/>
+        <line num="85" type="method" name="reset" crap="1" count="2"/>
+        <line num="87" type="stmt" count="2"/>
+        <line num="88" type="stmt" count="2"/>
+        <line num="89" type="stmt" count="2"/>
+        <line num="90" type="stmt" count="2"/>
+        <metrics loc="91" ncloc="51" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="27" coveredelements="27"/>
+      </file>
+    </package>
+    <metrics files="1" loc="91" ncloc="51" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="23" elements="27" coveredelements="27"/>
+  </project>
+</coverage>

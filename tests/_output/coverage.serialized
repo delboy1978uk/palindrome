@@ -1,0 +1,138 @@
+<?php
+$coverage = new PHP_CodeCoverage;
+$coverage->setData(array (
+  '/Users/delboy1978uk/Sites/lab/palindrome/src/Tester.php' => 
+  array (
+    27 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+      2 => 'Del\\Palindrome\\TesterTest::testNonStringThrowsException',
+    ),
+    28 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+      2 => 'Del\\Palindrome\\TesterTest::testNonStringThrowsException',
+    ),
+    29 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testNonStringThrowsException',
+    ),
+    30 => NULL,
+    32 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    35 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    38 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    41 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    44 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    45 => NULL,
+    54 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    58 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    59 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    60 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+    ),
+    61 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+    ),
+    64 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    67 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    70 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    71 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    78 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    79 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    80 => NULL,
+    87 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    88 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    89 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+    90 => 
+    array (
+      0 => 'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue',
+      1 => 'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse',
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'Del\\Palindrome\\TesterTest::testPalindromeReturnsTrue' => 0,
+  'Del\\Palindrome\\TesterTest::testNonPalindromeReturnsFalse' => 0,
+  'Del\\Palindrome\\TesterTest::testNonStringThrowsException' => 0,
+));
+
+$filter = $coverage->filter();
+$filter->setBlacklistedFiles(array (
+));
+$filter->setWhitelistedFiles(array (
+  '/Users/delboy1978uk/Sites/lab/palindrome/src/Tester.php' => true,
+));
+
+return $coverage;

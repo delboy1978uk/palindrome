@@ -19,4 +19,4 @@ temp/
 demos/
 extras/documentation
 
-tests/_output/*
+#tests/_output/*
