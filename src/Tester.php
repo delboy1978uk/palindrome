@@ -10,6 +10,6 @@ class Tester
      */
     public function isPalindrome($string)
     {
-        return true;
+        return null;
     }
 }
