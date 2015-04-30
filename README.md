@@ -18,4 +18,4 @@ Scrutinizer
 -----------
 Scrutinizer inspects code for bad smells etc.
 Coverage clovers are uploaded from the Travis builds to Scrutinizer.
-See status icons above. 
+See status icons above.

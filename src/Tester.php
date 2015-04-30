@@ -75,7 +75,6 @@ class Tester
      */
     private function stringsMatch()
     {
-        echo $this->first_half."\n".$this->second_half_reversed."\n\n";
         return $this->first_half == $this->second_half_reversed;
     }
 
