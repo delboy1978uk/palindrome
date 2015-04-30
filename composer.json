@@ -10,5 +10,12 @@
             "email": "delboy1978uk@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": 
+    {
+        "psr-4": 
+        {
+	    "Del\\Palindrome\\": "src/"
+	}
+    }
 }
