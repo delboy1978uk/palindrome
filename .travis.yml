@@ -31,7 +31,7 @@ before_script:
   - java -jar selenium-server-standalone-2.42.2.jar -port 4444 &
 
 script:
-  - php vendor/bin/codecept run  --coverage-xml --env travis
+  - php vendor/bin/codecept run unit --coverage-xml --env travis
 
 after_script:
   - wget https://scrutinizer-ci.com/ocular.phar
