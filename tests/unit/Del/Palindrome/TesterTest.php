@@ -43,9 +43,10 @@ class TesterTest extends \Codeception\TestCase\Test
 
     public function testNonStringThrowsException()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->setExpectedException('Exception');
         $this->palindrome_tester->isPalindrome(array('crash' => 'bang'));
         $this->palindrome_tester->isPalindrome(new \DateTime());
+        $this->palindrome_tester->isPalindrome(135);
     }
 
 }
