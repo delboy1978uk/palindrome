@@ -4,7 +4,7 @@
 Installation via Packagist
 --------------------------
 ```
-composer create-project delboy1978uk/palindrome
+composer create-project delboy1978uk/palindrome --stability=dev
 ```
 Testing with Codeception
 ------------------------
