@@ -1,0 +1,14 @@
+{
+    "name": "delboy1978uk/palindrome",
+    "description": "Palindrome Code Kata",
+    "require-dev": {
+        "codeception/codeception": "~2.0"
+    },
+    "authors": [
+        {
+            "name": "Derek McLean",
+            "email": "delboy1978uk@gmail.com"
+        }
+    ],
+    "require": {}
+}
