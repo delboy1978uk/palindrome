@@ -33,11 +33,7 @@
                     e.preventDefault();
                     var string = $('#query').val();
                     $.get('api.php',{ query : string },function(e){
-                        if(e.result == 'error')
-                        {
-                            $('h1').html('Dude, enter some text!');
-                        }
-                        else if(e.result == true)
+                        if(e.result == true)
                         {
                             $('h1').html(string + ' is a Palindrome!');
                         }
@@ -45,6 +41,8 @@
                         {
                             $('h1').html(string + ' is NOT a Palindrome!');
                         }
+                    }).fail(function(){
+                    	$('h1').html('Dude, enter some text!');
                     });
                 });
             });

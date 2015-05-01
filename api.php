@@ -10,7 +10,7 @@
 
     if(empty($string))
     {
-        header('Content-Type: application/json',true,500);
+        header('Content-Type: application/json',true,400);
         echo json_encode(array(
             'query' => null,
             'result' => 'error'
