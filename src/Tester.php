@@ -29,7 +29,7 @@ class Tester
             throw new Exception('You must pass a string!');
         }
 
-        $this->original_string = $string;
+        $this->original_string = strtolower($string);
 
         // prepare the string for analysis
         $this->setComparisonStrings();

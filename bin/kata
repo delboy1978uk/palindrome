@@ -1,0 +1,92 @@
+#!/usr/bin/php -q
+<?php
+
+echo "
+
+       7MMMM                 ..
+       MMMMM                 IMM
+       MMMMM                MMMMM
+       MMMMMM               MMMMM.
+       MMMMMM              IMMMMM.
+       MMMMMM.            .MMMMMM
+       ,MMMMM ..MMN   ~, . MMMMMM.
+       .MMMMM. MMMM. MMMMM MMMMM,
+       .MMMMMOMMMMMZ ..MMM.MMMMM.
+        8MMMMMMMM.,MNMM.IM MMMMM
+         MMMM  ..MM... M M MMMMM
+       .ZMMM  MMMMMM  M M$ MMMMM
+        MD.IMMMMMMMMM.:MM.=MMMMM
+       ..MMMMMMMMM7  $MM..MMMMMM
+       MMMMMMMMD. MMMMMMMMMMMMM7
+       MMMMMMMMMMM: MMMMMMMMMMM.
+       .MMMMMMMMMMMM MMMMMMMMMM.
+       . MMMMMMMMMMMM MMMMMMMM
+         .MMMMMMMMMMM MMMMMMM
+          .MMMMMMMMMM MMMMMM
+          . MMMMMMMMM MMMM
+            . MMMMMM MM.
+             . . I.   .
+        ";
+echo "\n\nThe Totally Rocking Palindrome Code Kata\n";
+echo "======================================\n\n";
+echo "Enter the number of terms you wish to check, and press return.\n\n";
+
+
+
+
+    require_once('../vendor/autoload.php');
+
+    use Del\Palindrome\Tester;
+
+    $test = new Tester();
+
+    echo "\n";
+
+	$input = fopen("php://stdin","r");
+
+
+    $x = 0;
+    $num = null;
+    $output = null;
+
+	//feof returns true on Ctrl+D
+	while(!feof($input))
+    {
+	    $line = trim(fgets($input));
+
+        // Get the number of strings to test from the first line of input
+        if(is_null($num))
+        {
+            if(!is_numeric($line))
+            {
+                echo "Error: The first line must be the number of words you wish to test\n\n";
+                var_dump($line);
+                exit;
+            }
+            else
+            {
+                $num = $line;
+                echo "Now enter each word followed by the return key. (separate line each)\n\n";
+            }
+        }
+        else
+        {
+            // Make sure its [a-zA-Z] (without regex!)
+            if(!ctype_alpha($line))
+            {
+                echo "Error: The strings to test can only contain a-z or A-Z\n\n";
+                exit;
+            }
+            $output .= $test->isPalindrome($line) ? "Y\n" : "N\n";
+        }
+
+
+        if($x == $num)
+        {
+            break;
+        }
+        $x ++ ;
+	}
+
+    echo "\n";
+    echo $output;
