@@ -12,6 +12,11 @@ The palindrome command is in the bin directory. You can add several words.
 ```
 ./palindrome radar failingword kayak dad mum etc 
 ```
+Calling the API
+---------------
+```
+api.php?query=radar
+```
 Testing with Codeception
 ------------------------
 ```
