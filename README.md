@@ -6,6 +6,9 @@ Installation via Packagist
 ```
 composer create-project delboy1978uk/palindrome --stability=dev
 ```
+Running from a Browser
+----------------------
+index.php has a text field and submit button which calls the palindrome API.
 Running the CLI command
 -----------------------
 The palindrome command is in the bin directory. You can add several words.
