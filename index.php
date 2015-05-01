@@ -43,7 +43,7 @@
                         }
                         else
                         {
-                            $('h1').html(string + 'is NOT a Palindrome!');
+                            $('h1').html(string + ' is NOT a Palindrome!');
                         }
                     });
                 });
