@@ -6,6 +6,12 @@ Installation via Packagist
 ```
 composer create-project delboy1978uk/palindrome --stability=dev
 ```
+Running the CLI command
+-----------------------
+The palindrome command is in the bin directory. You can add several words.
+```
+./palindrome radar failingword kayak dad mum etc 
+```
 Testing with Codeception
 ------------------------
 ```

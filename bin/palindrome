@@ -1,0 +1,53 @@
+#!/usr/bin/env php
+<?php
+
+    if(count($argv) == 1)
+    {
+        echo "
+
+       7MMMM                 ..
+       MMMMM                 IMM
+       MMMMM                MMMMM
+       MMMMMM               MMMMM.
+       MMMMMM              IMMMMM.
+       MMMMMM.            .MMMMMM
+       ,MMMMM ..MMN   ~, . MMMMMM.
+       .MMMMM. MMMM. MMMMM MMMMM,
+       .MMMMMOMMMMMZ ..MMM.MMMMM.
+        8MMMMMMMM.,MNMM.IM MMMMM
+         MMMM  ..MM... M M MMMMM
+       .ZMMM  MMMMMM  M M$ MMMMM
+        MD.IMMMMMMMMM.:MM.=MMMMM
+       ..MMMMMMMMM7  $MM..MMMMMM
+       MMMMMMMMD. MMMMMMMMMMMMM7
+       MMMMMMMMMMM: MMMMMMMMMMM.
+       .MMMMMMMMMMMM MMMMMMMMMM.
+       . MMMMMMMMMMMM MMMMMMMM
+         .MMMMMMMMMMM MMMMMMM
+          .MMMMMMMMMM MMMMMM
+          . MMMMMMMMM MMMM
+            . MMMMMM MM.
+             . . I.   .
+        ";
+        echo "\n\nThe Totally Rocking Palindrome Checker\n";
+        echo "======================================\n\n";
+        echo "Usage: ./palindrome add as many words as you like to check etc radar mum dad kayak\n\n";
+        echo "Your move. \n";
+        exit;
+    }
+
+
+    require_once('../vendor/autoload.php');
+
+    use Del\Palindrome\Tester;
+
+    $test = new Tester();
+
+    echo "\n";
+    for ($x = 1; $x < count($argv); $x++)
+    {
+        echo $argv[$x].' is ';
+        echo $test->isPalindrome($argv[$x]) ? null : 'not ';
+        echo "a palindrome.\n";
+    }
+    echo "\n";
