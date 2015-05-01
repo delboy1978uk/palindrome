@@ -4,8 +4,105 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bd974d000a3b002863fc74dd4fefb471",
-    "packages": [],
+    "hash": "d74bd14ad2dd1109c4d3de4ea8c5496d",
+    "packages": [
+        {
+            "name": "delboy1978uk/cdn",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delboy1978uk/cdn.git",
+                "reference": "401ed5b8c4801899529a2ba6db5e334830e1510c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delboy1978uk/cdn/zipball/401ed5b8c4801899529a2ba6db5e334830e1510c",
+                "reference": "401ed5b8c4801899529a2ba6db5e334830e1510c",
+                "shasum": ""
+            },
+            "require": {
+                "delboy1978uk/css": "dev-master",
+                "delboy1978uk/icon": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Del\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Derek Stephen McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "time": "2015-05-01 02:26:56"
+        },
+        {
+            "name": "delboy1978uk/css",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delboy1978uk/css.git",
+                "reference": "91b5f43226b51e21689ef2862890e803348f8729"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delboy1978uk/css/zipball/91b5f43226b51e21689ef2862890e803348f8729",
+                "reference": "91b5f43226b51e21689ef2862890e803348f8729",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Del\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Derek Stephen McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "Karate Chop CSS™",
+            "time": "2015-03-12 18:21:45"
+        },
+        {
+            "name": "delboy1978uk/icon",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/delboy1978uk/icon.git",
+                "reference": "9df84ac10de1df192f0dbb40d77b822ccadd3ab0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/delboy1978uk/icon/zipball/9df84ac10de1df192f0dbb40d77b822ccadd3ab0",
+                "reference": "9df84ac10de1df192f0dbb40d77b822ccadd3ab0",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Del": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Derek McLean",
+                    "email": "delboy1978uk@gmail.com"
+                }
+            ],
+            "description": "PHP Class for generating Font Awesome icons.",
+            "time": "2015-02-05 14:40:38"
+        }
+    ],
     "packages-dev": [
         {
             "name": "codeception/codeception",
@@ -1622,7 +1719,11 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "delboy1978uk/cdn": 20,
+        "delboy1978uk/css": 20,
+        "delboy1978uk/icon": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

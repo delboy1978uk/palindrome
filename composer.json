@@ -10,12 +10,17 @@
             "email": "delboy1978uk@gmail.com"
         }
     ],
-    "require": {},
+    "require":
+    {
+        "delboy1978uk/cdn": "dev-master",
+        "delboy1978uk/css": "dev-master",
+        "delboy1978uk/icon": "dev-master"
+    },
     "autoload": 
     {
         "psr-4": 
         {
-	    "Del\\Palindrome\\": "src/"
-	}
+	        "Del\\Palindrome\\": "src/"
+	    }
     }
 }
