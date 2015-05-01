@@ -15,6 +15,11 @@ The palindrome command is in the bin directory. You can add several words.
 ```
 ./palindrome radar failingword kayak dad mum etc 
 ```
+The kata command is also in the bin directory. This accepts input and produces output to the code kata spec.
+Type in the following comand and follow the instructions
+```
+./kata
+```
 Calling the API
 ---------------
 ```
